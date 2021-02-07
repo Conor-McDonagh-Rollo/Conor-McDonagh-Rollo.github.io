@@ -1,4 +1,17 @@
 .centrePage {
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 3px solid #a0a0a0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 80px;
+}
+
+body {
+    background-color: rgb(200, 200, 200);
 }
