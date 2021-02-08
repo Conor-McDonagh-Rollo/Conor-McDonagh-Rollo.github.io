@@ -1,12 +1,57 @@
-.centrePage {
-    max-width: 500px;
-    margin: auto;
+.content {
+    float: left;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-bottom: 100px;
 }
+
+.gallery {
+    padding: 10%;
+    width: 50%;
+    max-width: 50%;
+    float: left;
+}
+
+.formsub {
+    background-color: rgb(253, 253, 253);
+    outline: 2px dashed black;
+    padding: 20px;
+    width: 100%;
+    max-width: fit-content;
+}
+
+.newsContent {
+    background-color: rgb(253, 253, 253);
+    outline: 2px dashed black;
+    padding: 20px;
+    height: 310px;
+    min-height: 310px;
+    overflow: auto;
+}
+
+.news {
+    margin-left: 310px;
+}
+
+.newsImage {
+    float: left;
+    display: block;
+}
+
+q {
+    font-style:italic;
+}
+
+a { 
+    color: inherit;
+} 
 
 body {
     background-image: url("iconbg.png");
     background-repeat: repeat;
-    overflow: hidden;
+    font-family: Verdana, sans-serif;
 }
 
 .navbar {
@@ -45,10 +90,11 @@ li a:hover {
 
 footer {
     background-color:  rgb(34, 34, 34);
-    position: absolute;
+    position:fixed;
     width: 100%;
     margin-left: -8px;
     bottom: 0;
+    
 }
 
 footer p {
