@@ -34,11 +34,11 @@
         <div class="formsub">
             <h2>Contact Form</h2>
         <form name="submit-to-google-sheet" method="POST" onsubmit="btn.disabled = true; return true;">
-            <label for="full name"><h3>Full Name</h3></label><input name="full_name" type="text" placeholder="John Doe" required>
+            <label for="fullname"><h3>Full Name</h3></label><input name="full_name" id="fullname" type="text" placeholder="John Doe" required>
             <br>
-            <label for="email"><h3>Email</h3></label><input name="email" type="email" placeholder="someone@example.com" required>
+            <label for="email"><h3>Email</h3></label><input name="email" id="email" type="email" placeholder="someone@example.com" required>
             <br>
-            <label for="message"><h3>Message</h3></label><input name="message" type="text" placeholder="Message" required>
+            <label for="message"><h3>Message</h3></label><input name="message" id="message" type="text" placeholder="Message" required>
             <button type="submit" name="btn">Send</button>
             <p id="msg"><strong>Please do not enter your real email!</strong><br>Everyone's responses can be found <a href="https://docs.google.com/spreadsheets/d/1H11Fdcl5r6IWNLBMWqYiS18C6OGqAjBwC-0JMaUUn9o/edit?usp=sharing">in this spreadsheet</a></p>
           </form>
