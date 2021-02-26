@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Dungeons & Dragons</title>
         <link rel="stylesheet" href="style.css">
@@ -8,7 +8,7 @@
     </head>
     <body>
         <ul class="navbar">
-            <li class="left"><img src="dnd.png" class="titleImg"></li>
+            <li class="left"><img src="dnd.png" class="titleImg" alt="Dungeons & Dragons"></li>
             <li class="left"><a href="main.html">Home</a></li>
             <li class="left"><a href="news.html">News</a></li>
 
@@ -32,15 +32,15 @@
         </p>
         <br><br>
         <div class="formsub">
-            <h3>Contact Form</h3>
+            <h2>Contact Form</h2>
         <form name="submit-to-google-sheet" method="POST" onsubmit="btn.disabled = true; return true;">
-            <h4>Full Name</h4><input name="full_name" type="text" placeholder="John Doe" required>
+            <label for="full name"><h3>Full Name</h3></label><input name="full_name" type="text" placeholder="John Doe" required>
             <br>
-            <h4>Email</h4><input name="email" type="email" placeholder="someone@example.com" required>
+            <label for="email"><h3>Email</h3></label><input name="email" type="email" placeholder="someone@example.com" required>
             <br>
-            <h4>Message</h4><input name="message" type="text" placeholder="Message" required>
+            <label for="message"><h3>Message</h3></label><input name="message" type="text" placeholder="Message" required>
             <button type="submit" name="btn">Send</button>
-            <p id="msg"><strong>Please do not enter your real email!</strong><br>Everyone's responses can be found <a href="https://docs.google.com/spreadsheets/d/1H11Fdcl5r6IWNLBMWqYiS18C6OGqAjBwC-0JMaUUn9o/edit?usp=sharing">Here</a></p>
+            <p id="msg"><strong>Please do not enter your real email!</strong><br>Everyone's responses can be found <a href="https://docs.google.com/spreadsheets/d/1H11Fdcl5r6IWNLBMWqYiS18C6OGqAjBwC-0JMaUUn9o/edit?usp=sharing">in this spreadsheet</a></p>
           </form>
         </div>
           <script>
