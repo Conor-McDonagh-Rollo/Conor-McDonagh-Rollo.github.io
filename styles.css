@@ -1,0 +1,85 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    background: #020710; /* dark blue-ish background for space */
+    overflow-x: hidden; /* prevent any horizontal scrolling */
+}
+
+header, section {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background: #030a15; /* slightly lighter than body for contrast */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+.game-project {
+    margin: 20px 0;
+}
+
+.game-project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Star Animation */
+@keyframes moveStar {
+    to {
+        transform: translateX(100vw); /* move star from left to right of the viewport */
+    }
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #FFF;
+    animation: moveStar linear infinite;
+    opacity: 0.7; /* making stars slightly transparent */
+}
+
+/* Create stars using pseudo-elements */
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    width: 2px;
+    height: 2px;
+    background: #FFF;
+
+    /* random starting point */
+    left: -10%;
+    
+    /* random speed and duration */
+    animation: moveStar 10s linear infinite;
+}
+
+body::after {
+    top: 50%;
+    left: -15%;
+    animation-duration: 7s; /* slightly different speed */
+}
