@@ -1,10 +1,14 @@
 /* Base Styles */
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    color: #FFF;
+    background: #f6f8fa;
+    color: #24292e;
     margin: 0;
     padding: 0;
-    background: #020710; /* dark blue-ish background for space */
     overflow-x: hidden; /* prevent any horizontal scrolling */
 }
 
@@ -14,72 +18,199 @@ header, section {
 }
 
 header {
-    background: #030a15; /* slightly lighter than body for contrast */
+    position: relative;
+    background: #24292e; 
+    padding: 15px 0;
+}
+
+#starry-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    z-index: 0; 
+}
+
+header h1 {
+    color: #FFF;
+    z-index: 1;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    z-index: 1;
 }
 
 nav ul li {
     display: inline;
     margin: 0 10px;
+    z-index: 1;
 }
 
 nav ul li a {
     color: #FFF;
     text-decoration: none;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+nav ul li a:hover {
+    background: #3a3f45; 
 }
 
 h1, h2, h3 {
     margin-top: 0;
 }
 
-.game-project {
+section {
+    background: #ffffff;
+    padding: 20px 40px;
     margin: 20px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.game-project img {
-    max-width: 100%;
-    height: auto;
+#intro p {
+    margin: 0 10vw; 
+    text-align: justify;
+    text-justify: inter-word; 
 }
 
-/* Star Animation */
-@keyframes moveStar {
-    to {
-        transform: translateX(100vw); /* move star from left to right of the viewport */
-    }
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* spacing between the grid items */
+    justify-content: center;
+    align-items: start;
 }
 
-.star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: #FFF;
-    animation: moveStar linear infinite;
-    opacity: 0.7; /* making stars slightly transparent */
+footer {
+    background: #24292e;
+    color: #ffffff;
+    padding: 20px 0;
 }
 
-/* Create stars using pseudo-elements */
-body::before,
-body::after {
-    content: "";
-    position: absolute;
-    top: 10%;
-    width: 2px;
-    height: 2px;
-    background: #FFF;
-
-    /* random starting point */
-    left: -10%;
-    
-    /* random speed and duration */
-    animation: moveStar 10s linear infinite;
+a {
+    color: #0366d6; 
 }
 
-body::after {
-    top: 50%;
-    left: -15%;
-    animation-duration: 7s; /* slightly different speed */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Github Cards */
+
+.repo-card {
+    width: 300px;
+    border: 1px solid #e1e4e8;
+    padding: 16px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    transition: transform 0.3s, filter 0.3s; 
+}
+
+.repo-card:hover {
+    transform: scale(1.05); 
+    filter: brightness(0.95); 
+    transition: transform 0.3s, filter 0.3s; 
+}
+
+.repo-card a {
+    text-decoration: none;
+    color: #0366d6;
+}
+
+.repo-card .repo-title {
+    margin-bottom: 8px;
+}
+
+.repo-card .repo-description {
+    font-size: 14px;
+    color: #586069;
+    margin-bottom: 16px;
+}
+
+.repo-card .repo-info {
+    font-size: 12px;
+    color: #586069;
+}
+
+.repo-card .language {
+    padding: 4px 10px;
+    border-radius: 16px;
+    color: #ffffff;
+    margin-right: 8px;
+}
+
+.language-javascript {
+    background-color: #f1e05a;
+    color: black; 
+}
+.language-python {
+    background-color: #4000ff;
+    color: black; 
+}
+.language-java {
+    background-color: #ff8c00;
+    color: black; 
+}
+.language-html {
+    background-color: #ff0000;
+    color: black; 
+}
+.language-cpp {
+    background-color: #1aff00;
+    color: black; 
+}
+.language-c {
+    background-color: #878787;
+    color: black; 
+}
+.language-asp-net {
+    background-color: #a200ff;
+    color: black; 
+}
+
+.repo-card .stars,
+.repo-card .forks {
+    margin-right: 6px;
+}
+
+/* Contact Form Styles */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    background-color: #f6f8fa;
+    color: #24292e; 
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #0366d6; 
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0050a5;
 }
