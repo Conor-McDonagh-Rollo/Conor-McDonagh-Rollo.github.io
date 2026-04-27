@@ -1,45 +1,25 @@
-# Game Developer Portfolio
+# conormcdr.com
 
-Welcome to the repository of Conor McDonagh Rollo's Game Developer Portfolio. This portfolio showcases my programming journey, projects, and more.
+Personal portfolio site for Conor McDonagh Rollo. Hosted on GitHub Pages at [conormcdr.com](https://conormcdr.com).
 
-![Portfolio Screenshot](screenshot.png)
+## Stack
 
-## Table of Contents
+- Static HTML
+- [Tailwind CSS](https://tailwindcss.com/) (Play CDN)
+- [Font Awesome](https://fontawesome.com/) (CDN)
+- Vanilla JS for the mobile menu and scroll animations
 
-- [About Me](#about-me)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setting Up Locally](#setting-up-locally)
-- [Contact](#contact)
+## Structure
 
-## About Me
+- `index.html` - landing page (hero, about, experience, projects, skills, contact)
+- `McDonaghRollo_Conor.pdf` - downloadable CV
+- `assets/` - CSS, JS, images
+- `CNAME` - custom domain config for GitHub Pages
 
-I began programming at a young age and pursued Computer Game Development in SETU, Carlow. Over the years, I have gained proficiency in a multitude of languages, frameworks, tools, and game engines. I am driven by my passion for continuous learning and always strive to stay updated with the latest in technology.
+## Local preview
 
-Learn more about me [here](https://conor-mcdonagh-rollo.github.io/#intro).
+I recommend to clone the repository, open folder in vscode, and use the live server addon to view on port 5000.
 
-## Features
+## Deploy
 
-- **Dynamic GitHub Repos**: Automatically fetches and displays pinned repositories from my GitHub profile.
-- **Interactive Design**: Hover effects, animations, and a sleek design inspired by GitHub's color scheme.
-- **Contact Form**: Integrated with Getform and uses a honeypot for spam filtering.
-
-## Technologies Used
-
-- HTML
-- CSS
-- JavaScript
-- GitHub Pages for hosting
-- GitHub API for fetching repository data
-- Getform for form backend
-
-## Setting Up Locally
-
-1. Clone this repository:
-   ```bash
-   	git clone https://github.com/Conor-McDonagh-Rollo/Conor-McDonagh-Rollo.github.io.git
-   ```
-2. Open index.html in your browser to view the portfolio.
-
-## Contact
-For any inquiries or collaboration opportunities, you can reach out to me at [my LinkedIn](https://www.linkedin.com/in/conormcdr/).
+Push to `main`. GitHub Pages handles the rest.

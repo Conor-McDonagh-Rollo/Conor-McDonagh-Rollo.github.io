@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conor McDonagh Rollo</title>
+    <title>Conor McDonagh Rollo - Software Engineer</title>
+    <meta name="description" content="Conor McDonagh Rollo: Software Engineer based in Carlow, Ireland. MSc Enterprise Software Systems graduate with shipped console game experience and a focus on cloud and distributed systems.">
+    <meta name="author" content="Conor McDonagh Rollo">
+
+    <!-- Open Graph for link previews -->
+    <meta property="og:title" content="Conor McDonagh Rollo - Software Engineer">
+    <meta property="og:description" content="MSc Enterprise Software Systems graduate. C#, C++, Python. Shipped Slay the Princess to PlayStation, Xbox, and Nintendo Switch. Cloud and distributed systems focus.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://conormcdr.com">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="assets/js/tailwind.config.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -21,6 +35,7 @@
                     <a href="#home" class="nav-link text-dark hover:text-primary font-medium">Home</a>
                     <a href="#about" class="nav-link text-dark hover:text-primary font-medium">About</a>
                     <a href="#experience" class="nav-link text-dark hover:text-primary font-medium">Experience</a>
+                    <a href="#projects" class="nav-link text-dark hover:text-primary font-medium">Projects</a>
                     <a href="#skills" class="nav-link text-dark hover:text-primary font-medium">Skills</a>
                     <a href="#contact" class="nav-link text-dark hover:text-primary font-medium">Contact</a>
                 </div>
@@ -39,6 +54,7 @@
                 <a href="#home" class="nav-link text-dark hover:text-primary font-medium py-2">Home</a>
                 <a href="#about" class="nav-link text-dark hover:text-primary font-medium py-2">About</a>
                 <a href="#experience" class="nav-link text-dark hover:text-primary font-medium py-2">Experience</a>
+                <a href="#projects" class="nav-link text-dark hover:text-primary font-medium py-2">Projects</a>
                 <a href="#skills" class="nav-link text-dark hover:text-primary font-medium py-2">Skills</a>
                 <a href="#contact" class="nav-link text-dark hover:text-primary font-medium py-2">Contact</a>
             </div>
@@ -46,26 +62,28 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="py-20 bg-gradient-to-r from-blue-50 to-green-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi there! <span class="wave">👋</span></h1>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">I'm a <span class="gradient-text">Software Engineer</span></h2>
-                    <p class="text-lg text-gray-600 mb-6">Passionate about creating solutions through technology and thriving in collaborative team environments.</p>
-                    <div class="flex space-x-4">
-                        <a href="#contact" class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Get In Touch</a>
-                        <a href="#about" class="border border-primary text-primary hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">Learn More</a>
-                        <a href="web_cv.html" class="border border-primary text-primary hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">View Web-CV</a>
-                        <a href="McDonaghRollo_Conor.min.pdf" class="border border-primary text-primary hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">Download CV</a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center animate-float">
-                    <div class="relative">
-                        <div class="w-64 h-64 md:w-80 md:h-80 bg-primary rounded-full opacity-10 absolute -left-6 -top-6"></div>
-                        <div class="w-64 h-64 md:w-80 md:h-80 bg-secondary rounded-full opacity-10 absolute -right-6 -bottom-6"></div>
-                        <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Developer at work" class="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover rounded-lg shadow-xl">
-                    </div>
+    <section id="home" class="relative py-24 md:py-32 hero-bg">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/img/backdrop.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/70 to-slate-900/40"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <div class="max-w-3xl animate-fade-in">
+                <p class="text-sm uppercase tracking-widest text-blue-300 mb-3 font-semibold">Software Engineer - Carlow, Ireland</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                    Hi, I'm Conor.
+                </h1>
+                <h2 class="text-xl md:text-2xl font-medium mb-6 text-gray-200">
+                    Building software in <span class="text-blue-300">C#</span>, <span class="text-green-300">C++</span>, and <span class="text-yellow-300">Python</span> - from console game ports to carbon-aware Kubernetes schedulers.
+                </h2>
+                <p class="text-base md:text-lg text-gray-300 mb-8 max-w-2xl">
+                    MSc Enterprise Software Systems graduate (June 2026). I helped ship <em>Slay the Princess</em> to PlayStation, Xbox, and Nintendo Switch at Viridian Software. Now focused on cloud and distributed systems.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">View Projects</a>
+                    <a href="#contact" class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Get in Touch</a>
+                    <a href="McDonaghRollo_Conor.pdf" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                        <i class="fas fa-download mr-2"></i>Download CV
+                    </a>
                 </div>
             </div>
         </div>
@@ -75,24 +93,31 @@
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-12">About <span class="gradient-text">Me</span></h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                    <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-primary/10">
-                        <img src="https://media.licdn.com/dms/image/v2/D4E35AQGH4cOPfyX-AQ/profile-framedphoto-shrink_200_200/B4EZYw88zQGYAY-/0/1744578006500?e=1746122400&v=beta&t=Ut4cbhRsW9WhZClDGucnOM3_hmsNNfLnW8_Gn8yrLjw" alt="Profile" class="w-full h-full object-cover">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Monogram avatar -->
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-56 h-56 rounded-full flex items-center justify-center text-white text-7xl font-bold shadow-xl"
+                         style="background: linear-gradient(135deg, #3b82f6, #10b981);">
+                        CR
                     </div>
                 </div>
-                <div class="md:w-2/3 md:pl-12">
-                    <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
-                    <p class="text-gray-600 mb-6">
-                        A recent BSc (Hons) Computer Games Development graduate, equipped with expertise in C#, C++, Java, Python and more. Successfully delivered production-quality code and consistently maintained high unit test coverage across all projects. Recognized for adaptability, collaborative spirit, and effective communication skills. Actively pursuing a Software Engineering role to contribute to innovative and scalable solutions.
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-semibold mb-4">Who I am</h3>
+                    <p class="text-gray-600 mb-4">
+                        I'm finishing an MSc in Enterprise Software Systems at SETU Waterford (graduating June 2026), with a dissertation on <strong>carbon-aware batch job scheduling in Kubernetes</strong> using historical European grid carbon-intensity data. Before the MSc, I worked at Viridian Software in Dublin as a Junior Game Programmer, contributing C#/C++ to a proprietary game engine and helping ship <em>Slay the Princess</em> across three console platforms.
                     </p>
-                    <div class="flex flex-wrap gap-4 mb-6">
+                    <p class="text-gray-600 mb-6">
+                        My BSc (Hons) Computer Games Development gave me strong foundations in algorithms, data structures, and software architecture. The MSc has extended that with cloud architecture, distributed systems, and CI/CD. I'm now looking for a software engineering role with a focus on cloud infrastructure or developer tools.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">C#</span>
                         <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">C/C++</span>
-                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">C#</span>
                         <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
-                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Java</span>
-                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Git</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Agile</span>
+                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">AWS</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Kubernetes</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">Docker</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">.NET</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Git &amp; CI/CD</span>
                     </div>
                     <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-blue-700">
                         Contact Me
@@ -108,210 +133,104 @@
     <!-- Experience Section -->
     <section id="experience" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">My <span class="gradient-text">Experience</span></h2>
-            <div class="space-y-8">
-                <!-- Viridian Software -->
-                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                        <h3 class="text-xl font-semibold">Software Engineer</h3>
-                        <span class="text-primary font-medium">Viridian Software</span>
+            <h2 class="text-3xl font-bold text-center mb-12">Experience &amp; <span class="gradient-text">Education</span></h2>
+            <div class="space-y-6 max-w-4xl mx-auto">
+
+                <!-- MSc -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold">MSc in Enterprise Software Systems</h3>
+                            <span class="text-primary font-medium">South East Technological University, Waterford</span>
+                        </div>
+                        <span class="text-gray-500 text-sm font-medium mt-2 md:mt-0">Sept 2025 - June 2026</span>
                     </div>
-                    <div class="flex items-center text-gray-500 text-sm mb-4">
-                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                        <span>Recent Employment</span>
+                    <div class="flex items-center text-gray-500 text-sm mb-3">
+                        <i class="fas fa-graduation-cap mr-2"></i>
+                        <span>Expected First-Class Honours (1.1)</span>
                     </div>
                     <p class="text-gray-600 mb-4">
-                        •	Developed and maintained internal tools and game features in C#.<br>
-                        •	Authored 100+ tests maintaining 70% code coverage at all times.<br>
-                        •	Took part in porting multiple games to console platforms utilizing Python, C/C++, GDK, NDK.<br>
-                        •	Helped ship <a href="https://serenityforge.com/games/slay-the-princess">Slay The Princess</a> to Xbox/Playstation/Switch.
-                        
+                        <strong>Dissertation:</strong> <em>Carbon-Aware Batch Job Scheduling in Kubernetes: A Simulation Study with Historical Grid Carbon-Intensity Data.</em> A modular Python framework comparing baseline, temporal, spatial, and combined scheduling strategies against ENTSO-E data across European regions locally in a simulated timeline.
                     </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Cloud Architecture</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Kubernetes</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">Python</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Distributed Systems</span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">Information Security</span>
+                    </div>
+                </div>
+
+                <!-- Viridian Software -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-l-4 border-secondary">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold">Junior Game Programmer</h3>
+                            <span class="text-primary font-medium">Viridian Software, DCU Alpha, Dublin</span>
+                        </div>
+                        <span class="text-gray-500 text-sm font-medium mt-2 md:mt-0">July 2024 - Dec 2024</span>
+                    </div>
+                    <ul class="text-gray-600 mb-4 space-y-1.5 list-disc list-outside ml-5">
+                        <li>Helped ship <a href="https://serenityforge.com/games/slay-the-princess" class="text-primary hover:underline"><em>Slay the Princess</em></a> to PlayStation, Xbox, and Nintendo Switch, working across the Microsoft GDK, Nintendo NDK, and Playstation SDK toolchains.</li>
+                        <li>Ported core gameplay features to Switch and PlayStation in C++/SDL, including hardware gyroscope integration to drive a parallax effect on both platforms for use with Dualshock and JoyCons.</li>
+                        <li>Contributed system implementations and unit tests to a proprietary C# game engine and authored 100+ tests maintaining 70%+ code coverage.</li>
+                        <li>Debugged and resolved platform-specific issues across the multi-project console release.</li>
+                    </ul>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">C#</span>
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">C++</span>
-                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Python</span>
-                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Unit Testing</span>
-                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">NDK</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">Python</span>
                         <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">GDK</span>
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs font-medium">NDK</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">SDL</span>
                     </div>
                 </div>
-                
-                <!-- Education -->
-                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                        <h3 class="text-xl font-semibold">BSc in Computer Games Development</h3>
-                        <span class="text-primary font-medium">SETU</span>
-                    </div>
-                    <div class="flex items-center text-gray-500 text-sm mb-4">
-                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                        <span>Graduated 2024 with 2.1</span>
-                    </div>
-                    <p class="text-gray-600 mb-4">
-                        <b>Relevant Modules:</b> Networking, Data Structures & Algorithms, Artificial Intelligence, Bias in Computational Systems, Web Development & Databases, 3D Graphics, Agile Software Development, UI Programming, Assembly Programming, Maths.
-<br>
-<b>Final Year Project:</b> Utilized C and C++ with OpenGL to build an inheritence and polymorphism based game engine targetted towards building games easily even in an environment without a GUI. The engine included primitives and base classes for you to build from, e.g. GameObject, Terrain, Input. The shiny feature was the automatic terrain generation tool, which utilized noise octaves and a detail value to generate levels according to your parameters. 
 
+                <!-- BSc -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold">BSc (Hons) Computer Games Development</h3>
+                            <span class="text-primary font-medium">South East Technological University, Carlow</span>
+                        </div>
+                        <span class="text-gray-500 text-sm font-medium mt-2 md:mt-0">Sept 2020 - May 2024</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 text-sm mb-3">
+                        <i class="fas fa-graduation-cap mr-2"></i>
+                        <span>Second-Class Honours, Grade 1 (2.1)</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        <strong>Final year project:</strong> A C/C++ OpenGL game engine built around inheritance and polymorphism, with base classes (GameObject, Terrain, Input) for use in environments without a GUI toolkit, along with a procedural terrain generator using noise octaves.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        <strong>Relevant modules:</strong> Data Structures &amp; Algorithms, 3D Graphics, Artificial Intelligence, Networking, Assembly Programming, UI Programming.
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Game Development</span>
-                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Software Engineering</span>
-                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Computer Science</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">C/C++</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">OpenGL</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Game Engine Design</span>
                     </div>
                 </div>
-                
-                <!-- Unum Internship -->
-                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                        <h3 class="text-xl font-semibold">Automation Testing Intern</h3>
-                        <span class="text-primary font-medium">Unum</span>
-                    </div>
-                    <div class="flex items-center text-gray-500 text-sm mb-4">
-                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                        <span>Internship</span>
-                    </div>
-                    <p class="text-gray-600 mb-4">
-                        •	Acquired practical experience in automation testing and agile workflows.                        
-                        •	Utilized Selenium to build automation tests for a Java based webapp.<br>
-•	Recorded test results from AWS, logged bugs accordingly, and delivered daily/weekly updates to the department.<br>
-•	Collaberated with other Interns to automate the retirement of load balancing pools on F5 through ServiceNow.<br>
-•	Engaged in daily standups and retrospectives.
 
-                    </p>
+                <!-- UNUM -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-l-4 border-secondary">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold">Automation Test Engineer Intern</h3>
+                            <span class="text-primary font-medium">UNUM, Carlow</span>
+                        </div>
+                        <span class="text-gray-500 text-sm font-medium mt-2 md:mt-0">Mar 2023 - Aug 2023</span>
+                    </div>
+                    <ul class="text-gray-600 mb-4 space-y-1.5 list-disc list-outside ml-5">
+                        <li>Built Selenium test suites for a Java-based web application, verifying behaviour against AWS-hosted environments and logging defects for triage.</li>
+                        <li>Collaborated with other interns to automate the retirement of F5 load-balancer pools through ServiceNow, replacing a manual operational workflow successfully saving networking engineers 40+ hours per month.</li>
+                        <li>Participated in daily stand-ups, sprint retrospectives, and delivered weekly progress reports to the QA team.</li>
+                    </ul>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">Java</span>
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Selenium</span>
-                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Automation Testing</span>
-                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">QA</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">My <span class="gradient-text">Skills</span></h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Programming Languages -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-primary/10 p-3 rounded-full mr-4">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold">Programming Languages</h3>
-                    </div>
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fab fa-microsoft text-blue-600 tech-icon"></i>
-                            </div>
-                            <span>C/C++</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fab fa-microsoft text-purple-600 tech-icon"></i>
-                            </div>
-                            <span>C#</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fab fa-python text-yellow-600 tech-icon"></i>
-                            </div>
-                            <span>Python</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fab fa-java text-red-600 tech-icon"></i>
-                            </div>
-                            <span>Java</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Tools & Frameworks -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-primary/10 p-3 rounded-full mr-4">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold">Tools & Frameworks</h3>
-                    </div>
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fab fa-git-alt text-orange-600 tech-icon"></i>
-                            </div>
-                            <span>Git</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-vial text-blue-600 tech-icon"></i>
-                            </div>
-                            <span>Unit Testing</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-spider text-red-600 tech-icon"></i>
-                            </div>
-                            <span>Selenium</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-gamepad text-green-600 tech-icon"></i>
-                            </div>
-                            <span>Game Engines</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Soft Skills -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-primary/10 p-3 rounded-full mr-4">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold">Soft Skills</h3>
-                    </div>
-                    <div class="space-y-3">
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-users text-blue-600 tech-icon"></i>
-                            </div>
-                            <span>Team Collaboration</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-lightbulb text-green-600 tech-icon"></i>
-                            </div>
-                            <span>Problem Solving</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-project-diagram text-purple-600 tech-icon"></i>
-                            </div>
-                            <span>Agile Methodologies</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-comments text-yellow-600 tech-icon"></i>
-                            </div>
-                            <span>Communication</span>
-                        </div>
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs font-medium">AWS</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">ServiceNow</span>
                     </div>
                 </div>
             </div>
@@ -319,70 +238,227 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="py-20 bg-gray-50">
+    <section id="projects" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">Featured <span class="gradient-text">Projects</span></h2>
-            
-            <div class="items-center justify-center">
-                <h3 class="text-2xl font-bold text-center mb-10"><span class="gradient-text">Coming soon...</span><br>Please check my Github in the meantime :)</h3>
+            <h2 class="text-3xl font-bold text-center mb-4">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">A selection of work I've put my name to. More on <a href="https://github.com/Conor-McDonagh-Rollo" class="text-primary hover:underline">my GitHub</a>.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+                <!-- Carbon-Aware K8s Scheduler -->
+                <div class="project-card p-6 rounded-xl">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-leaf text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Carbon-Aware Kubernetes Simulation</h3>
+                            <p class="text-sm text-gray-500">MSc Dissertation - 2025-2026</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        A modular Python simulation framework for evaluating carbon-aware batch job scheduling on Kubernetes. Comparing baseline, temporal deferral, spatial relocation, and combined strategies against historical grid carbon-intensity data from ENTSO-E.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Python</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs font-medium">Kubernetes</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-2 py-1 rounded-full text-xs font-medium">Docker</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Pandas</span>
+                    </div>
+                </div>
+
+                <!-- OpenGL Game Engine -->
+                <div class="project-card p-6 rounded-xl">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-cube text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">C/C++ OpenGL Game Engine</h3>
+                            <p class="text-sm text-gray-500">BSc Final Year Project - 2023-2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        An inheritance and polymorphism-based game engine in C/C++ on OpenGL, designed to be usable in environments without a GUI toolkit. Includes base classes (GameObject, Terrain, Input) and a procedural terrain generator using layered noise octaves with a configurable detail parameter.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">C/C++</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">OpenGL</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Procedural Generation</span>
+                    </div>
+                </div>
+
+                <!-- Slay the Princess Console Port -->
+                <div class="project-card p-6 rounded-xl">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-gamepad text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Slay the Princess - Console Ports</h3>
+                            <p class="text-sm text-gray-500">Viridian Software - 2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Helped ship <a href="https://serenityforge.com/games/slay-the-princess" class="text-primary hover:underline">Slay the Princess</a> to PlayStation, Xbox, and Nintendo Switch. Implemented hardware gyroscope support in C++/SDL to drive a parallax effect on Switch and PlayStation, and contributed to platform-specific debugging across the GDK, NDK, and Playstation SDK toolchains.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">C++</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">SDL</span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">GDK</span>
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs font-medium">NDK</span>
+                        <span class="bg-purple-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">PlayStation SDK</span>
+                    </div>
+                </div>
+
+                <!-- F5 Pool Retirement Automation -->
+                <div class="project-card p-6 rounded-xl">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-gears text-orange-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">F5 Pool Retirement Automation</h3>
+                            <p class="text-sm text-gray-500">UNUM Internship - 2023</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Collaborative project with fellow interns to automate the retirement of F5 BIG-IP load-balancing pools via ServiceNow, replacing a manual operational process. Reduced networking engineer workload and standardising the decommissioning workflow.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">ServiceNow</span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">F5 BIG-IP</span>
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs font-medium">Automation</span>
+                    </div>
+                </div>
+
             </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical <span class="gradient-text">Skills</span></h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+
+                <!-- Languages -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary/10 p-3 rounded-full mr-3">
+                            <i class="fas fa-code text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Languages</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>C# &amp; C/C++</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>Python</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>Java &amp; Kotlin</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>SQL, JavaScript, Lua</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-100 p-3 rounded-full mr-3">
+                            <i class="fas fa-cloud text-orange-500"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Cloud &amp; DevOps</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>AWS (EC2, S3, CloudWatch, Boto3)</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>Kubernetes &amp; Docker</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>Jenkins, Red Hat OpenShift</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>DigitalOcean, Heroku</li>
+                    </ul>
+                </div>
+
+                <!-- Frameworks & Tools -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-3">
+                            <i class="fas fa-screwdriver-wrench text-purple-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Frameworks &amp; Tools</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>.NET Core, OpenGL, SDL</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>Flask, Pandas, Qt, Unity</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>Git, Gradle, Maven</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>ServiceNow, F5 BIG-IP</li>
+                    </ul>
+                </div>
+
+                <!-- Testing & Practices -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-3">
+                            <i class="fas fa-vial text-green-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Testing &amp; Practices</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>NUnit, Google Test, JUnit</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>Pytest, KUnit, Selenium</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>Agile/Scrum, CI/CD</li>
+                        <li><i class="fas fa-check text-green-500 mr-2 text-xs"></i>Jira, Rally</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="text-center text-gray-500 text-sm mt-10">
+                Currently preparing for the AWS Solutions Architect Associate certification!
+            </p>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">Get In <span class="gradient-text">Touch</span></h2>
-            
-            <div class="flex flex-col md:flex-row gap-12">
-                <div class="md:w-1/2">
-                    <h3 class="text-xl font-semibold mb-4">Let's talk about opportunities</h3>
-                    <p class="text-gray-600 mb-6">
-                        I'm actively looking for roles in software development where I can apply my problem-solving skills 
-                        to create meaningful solutions. If you have an opportunity or just want to connect, feel free to reach out!
-                    </p>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <div class="bg-primary/10 p-2 rounded-full mr-4">
-                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                </svg>
-                            </div>
-                            <span class="text-gray-600">conormcdr@gmail.com</span>
+            <h2 class="text-3xl font-bold text-center mb-4">Get In <span class="gradient-text">Touch</span></h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                I'm actively looking for software engineering roles starting June 2026, with a focus on cloud, distributed systems, and developer tools. Open to hybrid opportunities in Ireland and remote.
+            </p>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                    <a href="mailto:conormcdr@gmail.com" class="bg-gray-50 hover:bg-blue-50 transition p-6 rounded-xl text-center">
+                        <div class="bg-primary/10 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-envelope text-primary"></i>
                         </div>
-                        <div class="flex items-center">
-                            <div class="bg-primary/10 p-2 rounded-full mr-4">
-                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                                </svg>
-                            </div>
-                            <span class="text-gray-600">+353 89 441 6763</span>
+                        <p class="font-semibold">Email</p>
+                        <p class="text-sm text-gray-600 break-all">conormcdr@gmail.com</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/conormcdr/" target="_blank" rel="noopener" class="bg-gray-50 hover:bg-blue-50 transition p-6 rounded-xl text-center">
+                        <div class="bg-primary/10 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-3">
+                            <i class="fab fa-linkedin-in text-primary"></i>
                         </div>
-                        <div class="flex items-center">
-                            <div class="bg-primary/10 p-2 rounded-full mr-4">
-                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </div>
-                            <span class="text-gray-600">Carlow, Ireland</span>
+                        <p class="font-semibold">LinkedIn</p>
+                        <p class="text-sm text-gray-600">linkedin.com/in/conormcdr</p>
+                    </a>
+                    <div class="bg-gray-50 p-6 rounded-xl text-center">
+                        <div class="bg-primary/10 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
                         </div>
-                    </div>
-                    
-                    <div class="flex space-x-4 mt-8">
-                        <a href="https://www.linkedin.com/in/conormcdr/" class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/Conor-McDonagh-Rollo" class="bg-gray-800 hover:bg-gray-900 text-white p-3 rounded-full">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://x.com/conormcdr" class="bg-blue-400 hover:bg-blue-500 text-white p-3 rounded-full">
-                            <i class="fab fa-twitter"></i>
-                        </a>
+                        <p class="font-semibold">Location</p>
+                        <p class="text-sm text-gray-600">Carlow, Ireland</p>
                     </div>
                 </div>
-                
+
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.linkedin.com/in/conormcdr/" target="_blank" rel="noopener" class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Conor-McDonagh-Rollo" target="_blank" rel="noopener" class="bg-gray-800 hover:bg-gray-900 text-white p-3 rounded-full transition" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/conormcdr" target="_blank" rel="noopener" class="bg-slate-700 hover:bg-slate-900 text-white p-3 rounded-full transition" aria-label="X / Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -391,28 +467,23 @@
     <footer class="bg-dark text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
+                <div class="mb-4 md:mb-0 text-sm text-gray-400">
+                    Built with HTML, Tailwind CSS, and a bit of caffeine.
                 </div>
-                <div class="flex space-x-6">
+                <div class="flex space-x-6 text-sm">
                     <a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a>
                     <a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
                     <a href="#experience" class="text-gray-400 hover:text-white transition duration-300">Experience</a>
-                    <a href="#skills" class="text-gray-400 hover:text-white transition duration-300">Skills</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
                     <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Conor McDonagh Rollo. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2026 Conor McDonagh Rollo</p>
                 <div class="flex space-x-4">
-                    <a href="https://www.linkedin.com/in/conormcdr/" class="text-gray-400 hover:text-white transition duration-300">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/Conor-McDonagh-Rollo" class="text-gray-400 hover:text-white transition duration-300">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://x.com/conormcdr" class="text-gray-400 hover:text-white transition duration-300">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+                    <a href="https://www.linkedin.com/in/conormcdr/" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition duration-300" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Conor-McDonagh-Rollo" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition duration-300" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/conormcdr" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition duration-300" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
                 </div>
             </div>
         </div>
